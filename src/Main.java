@@ -42,7 +42,7 @@ public class Main {
     float rate = 0.12f;
     float sum = 0f;
     for (int m = 1; m <= 12; m++) {
-        sum = sum + sum * rate + contribution;
+        sum = sum + sum * rate / 12 + contribution;
         System.out.println("Месяц " + m + ", сумма накоплений равна " + sum +" рублей" );
         }
 //task 10
